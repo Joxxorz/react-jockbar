@@ -75,7 +75,7 @@ $(document).ready(function() {
 });
 ```
 
-This will add the bar as is. Now we need to execute the 'loading' part of it, to make it extend to full width. We can do this by executing the following function:
+This will add the bar as is. It must sit in a document ready function, to ensure it doesn't try and append the html before the div exists. Now we need to execute the 'loading' part of it, to make it extend to full width. We can do this by executing the following function:
 
 ```
 jock.triggerBar();
