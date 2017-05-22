@@ -1,0 +1,11 @@
+{
+  "name": "react-jockbar",
+  "version": "1.0.17",
+  "description": "Simple to use progress bar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Jock Perkins",
+  "license": "ISC"
+}
