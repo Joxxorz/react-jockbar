@@ -70,7 +70,9 @@ Here is our empty div:
 And here is our function:
 
 ```
-$('#jock-bar').html(jockBar);
+$(document).ready(function() {
+  $('#jock-bar').html(jockBar);
+});
 ```
 
 This will add the bar as is. Now we need to execute the 'loading' part of it, to make it extend to full width. We can do this by executing the following function:
