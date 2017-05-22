@@ -33,13 +33,13 @@ var jock = require('react-jockbar');
 
 Once the bar has been added, you can start using it. The bar takes four parameters when calling it with a function, which are as follows:
 
-width - default value is 0. This is the starting width of the bar, measured in %.
+width - default value is 0. This is the starting width of the bar, measured in %
 
-height - default value is 10. This is the height of the bar, measured in px.
+height - default value is 10. This is the height of the bar, measured in px
 
-color - default value is red. This is the color the bar will be, any standard css color will work (i.e. hex or rgb.
+color - default value is red. This is the color the bar will be, any standard css color will work (i.e. hex or rgb)
 
-time - default value is 5. This is how long the bar will take to extend from starting width to 100% width, measured in seconds.
+time - default value is 5. This is how long the bar will take to extend from starting width to 100% width, measured in seconds
 
 ## Using the bar
 
