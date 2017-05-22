@@ -1,6 +1,6 @@
 {
   "name": "react-jockbar",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Simple to use progress bar.",
   "main": "index.js",
   "scripts": {
