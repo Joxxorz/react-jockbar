@@ -3,10 +3,10 @@ exports.progressBar = function(width, height, color, time) {
   color = color || 'red';
   height = height || '10';
   time = time || '5';
-  var theJockBarDetails = "<div id='loading-bar' style='width: " + width + "%; transition: all " + time + "s; height: " + height +"px; background-color: " + color + ";'></div>";
+  var theJockBarDetails = "<div class='loading-bar' style='width: " + width + "%; transition: all " + time + "s; height: " + height +"px; background-color: " + color + ";'></div>";
   return theJockBarDetails;
 }
 
-exports.triggerBar = function(){
-  document.getElementById("loading-bar").style.width = "100%";
+exports.triggerBar = function(barId){
+  document.getElementById(barId).getElementsByClassName("loading-bar")[0].style.width = "100%";
 }
