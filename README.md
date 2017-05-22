@@ -29,6 +29,12 @@ You can add the bar to your project by using the follow in your React project:
 var jock = require('react-jockbar');
 ```
 
+We should take this time to include jquery here in the project too, by doing the following:
+
+```
+var $ = require('jquery');
+```
+
 ## The parameters of the bar
 
 Once the bar has been added, you can start using it. The bar takes four parameters when calling it with a function, which are as follows:
@@ -48,7 +54,7 @@ The bar can be used by calling it with the below function:
 ```
 var width = 0;
 var height = 10;
-var color = red;
+var color = 'red';
 var time = 5;
 var jockBar = jock.progressBar(width, height, color, time);
 ```
