@@ -14,7 +14,7 @@ exports.triggerBar = function(barId){
     console.log('not this time');
   }
   else {
-    document.getElementById(barId).firstChild.style.width = "100%";
+    document.getElementById(barId).childNodes[0].style.width = "100%";
   }
   //var theBar = '#' + barId + ' .loading-bar';
   //document.getElementById(barId).getElementsByClassName("loading-bar").style.width = "100%";
