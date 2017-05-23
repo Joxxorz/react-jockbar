@@ -2,6 +2,8 @@
 
 A simple to use loading bar that requires just a few lines of code to call and use. I couldn't find a package that did this for me when the project required it, so I built one.
 
+Here is a [live demo](https://joxxorz.github.io/react-demo/)
+
 ### Prerequisites
 
 The bar requires you to have jquery in your project.
@@ -78,8 +80,10 @@ $(document).ready(function() {
 This will add the bar as is. It must sit in a document ready function, to ensure it doesn't try and append the html before the div exists. Now we need to execute the 'loading' part of it, to make it extend to full width. We can do this by executing the following function:
 
 ```
-jock.triggerBar();
+jock.triggerBar(barId);
 ```
+
+It's notable that the function uses the ID of the bar, this is incase you wish to have multiple bars on the same page. You should not pass the '#' when passing the id.
 
 Here are a few examples of how this can be used:
 
@@ -87,29 +91,43 @@ Here are a few examples of how this can be used:
 
 ```
 $(document).ready(function() {
-  jock.triggerBar();
+  var checkFalse = 0;
+  do {
+    if($("#pload-bar .loading-bar").length != 0){
+      jock.triggerBar('pload-bar');
+      checkFalse = 1;
+    }
+  }
+  while (checkFalse < 1);
 });
 ```
+
+This is done the way it is because the bar itself needs to have been created before you can trigger it.
 
 --- On Button Press ---
 
 The Button
 
 ```
-<button onClick={this.runTimer}>Click Me</button>
+<button onClick={() => {this.runTimer('quick-bar')}}>Click Me</button>
 ```
 
-The Function
+When using a button press you will want to use an arrow function, otherwise it will trigger on page load.
+
+--- The Function You Will Call ---
 
 ```
-runTimer(){
-  jock.triggerBar();
+runTimer(barId){
+  jock.triggerBar(barId);
 }
 ```
 
+You will need to include this function so that the bar can trigger.
+
+
 ### Multiple bars
 
-You should have no problem adding additional bars by just appending them to different html id's.
+You should have no problem adding additional bars by just appending them to different html id's and following the direction above.
 
 ## Authors
 
