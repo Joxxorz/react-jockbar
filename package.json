@@ -10,7 +10,7 @@
     "reactjs",
     "nodejs",
     "react",
-    "node",
+    "node"
   ],
   "main": "index.js",
   "scripts": {
