@@ -2,6 +2,16 @@
   "name": "react-jockbar",
   "version": "1.1.0",
   "description": "Simple to use progress bar.",
+  "keywords": [
+    "loading bar",
+    "loading",
+    "bar",
+    "lightweight",
+    "reactjs",
+    "nodejs",
+    "react",
+    "node",
+  ],
   "main": "index.js",
   "scripts": {
     "test": "node index.js"
